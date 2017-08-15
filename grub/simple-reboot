@@ -1,0 +1,16 @@
+#!/bin/bash
+bootOS="$1"
+#Old: awk -F\' '/menuentry / {print $2}' /boot/grub/grub.cfg
+
+bootstring=`awk -F\' '/menuentry /{print $2}' /boot/grub/grub.cfg`
+bootnumber=`printf "$bootstring" | awk -v bootregex=".*$bootOS.*" '{count++; if($0 ~ bootregex) {print count; exit}}'`
+
+printf "Boot options:\n"
+printf "$bootstring\n\n"
+printf "\"$bootOS\" matches boot entry $bootnumber\n"
+printf "Now booting to entry $bootnumber\n"
+
+bootnumber=`expr $bootnumber - 1`
+
+grub-reboot "$bootnumber"
+reboot now
