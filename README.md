@@ -26,7 +26,7 @@ Copy:
 
 ### boot-windows
 A simple predefined script to boot into Windows.
-This script requires simple-reboot to be installed and simply executes `simple-reboot Windows`
+This script requires simple-reboot to be installed and solely executes `simple-reboot Windows`
 (Requires super user rights)
 
 `boot-windows`
@@ -77,5 +77,5 @@ Copy:
 or 
 
 Append to existing file:
-`cat \<pathToRepository\>/LinuxUtil/vim/.vimrc ~/.vimrc`
+`cat \<pathToRepository\>/LinuxUtil/vim/.vimrc >> ~/.vimrc`
 
