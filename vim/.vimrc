@@ -9,5 +9,5 @@ highlight CursorLineNr ctermfg=yellow ctermbg=black
 highlight clear SpellBad
 highlight SpellBad cterm=underline ctermfg=red
 
-"Clear search highlight via esc
-nnoremap <silent> <esc> :noh<cr><esc>
+"Always yank to system clipboard (Linux)
+set clipboard=unnamedplus
