@@ -11,3 +11,8 @@ highlight SpellBad cterm=underline ctermfg=red
 
 "Always yank to system clipboard (Linux)
 set clipboard=unnamedplus
+
+"Stop line wrapping
+set textwidth=0
+set wrapmargin=0
+set formatoptions-=t
