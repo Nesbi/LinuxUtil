@@ -58,6 +58,7 @@ This configuration will:
 - changes the color of the current line number to yellow and others to gray
 - set spellcheck highlights to underline and to a red font color
 - Always copy to system clipboard
+- Remove linewrap
 
 #### Installation
 
