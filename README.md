@@ -48,6 +48,36 @@ Copy:
 `cp \<pathToRepository\>/LinuxUtil/grub/boot-windows /usr/bin`
 
 
+## bash
+### .bashrc
+Slim configuration file for bash.
+This configuration will:
+- source default profiles
+- set an alias for *ll* as *ls -a*
+- set *ls* to automatically include color
+- set an alias for *open* as *xdg-open* (for gnome based environments)
+
+#### Installation
+
+Copy or link the configuration to ~/.bashrc or add the content to your current .bashrc
+
+Link:
+`ln -s \<pathToRepository\>/LinuxUtil/bash/.bashrc ~/.bahsrc`
+
+(Caution! This will overwrite any existing .bashrc script!)
+
+or
+
+Copy:
+`cp \<pathToRepository\>/LinuxUtil/bash/.bashrc ~/.bashrc`
+
+(Caution! This will overwrite any existing .bashrc script!)
+
+or 
+
+Append to existing file:
+`cat \<pathToRepository\>/LinuxUtil/bash/.bashrc >> ~/.bashrc`
+
 ## Vim
 ### .vimrc
 Slim configuration file for vim.
@@ -80,4 +110,3 @@ or
 
 Append to existing file:
 `cat \<pathToRepository\>/LinuxUtil/vim/.vimrc >> ~/.vimrc`
-
