@@ -21,7 +21,15 @@ make install
 echo finished
 
 sudo eopkg install -y rofi compton font-awesome-ttf
-sudo cp rofi/darkdawn.rasi /usr/share/rofi/themes/
-sudo echo rofi.theme: /usr/share/rofi/themes/darkdawn.rasi  >> $HOME/.config/rofi/config
+if [ -f /home/$SUDO_USER/.config/i3/config]; then
+	echo Found existing i3 config
+	echo -\> Backup i3 config to /home/$SUDO_USER/backup/i3/config
+	sudo -u $SUDO_USER mkdir -p /home/$SUDO_USER/backup/i3
+fi
+
+echo Installing darkdawn.rasi theme
+sudo -u $SUDO_USER cp rofi/darkdawn.rasi /usr/share/rofi/themes/
+echo Setting darkdawn.rasi as default rofi theme
+sudo echo rofi.theme: /usr/share/rofi/themes/darkdawn.rasi  >> /home/$SUDO_USER/.config/rofi/config
 
 echo Installation is finished
