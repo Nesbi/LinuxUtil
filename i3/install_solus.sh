@@ -21,5 +21,7 @@ make install
 echo finished
 
 sudo eopkg install -y rofi compton font-awesome-ttf
+sudo cp rofi/darkdawn.rasi /usr/share/rofi/themes/
+sudo echo rofi.theme: /usr/share/rofi/themes/darkdawn.rasi  >> $HOME/.config/rofi/config
 
 echo Installation is finished
