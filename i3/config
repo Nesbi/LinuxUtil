@@ -34,7 +34,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1
 
 ########## Keybindings ##########
-bindsym Mod4+Shift+s exec i3lock # Easier locking
+bindsym Mod4+Shift+s exec i3lock -c 000000 -i ~/.config/i3/lock.png # Easier locking
 
 ### Backlight ###
 # Note: If light doesn't work, install xbacklight and 1) uncomment the two lines below.

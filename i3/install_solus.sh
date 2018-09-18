@@ -39,6 +39,7 @@ if [ -f /home/$SUDO_USER/.i3status.conf]; then
 fi
 echo Installing i3status.conf
 sudo -u $SUDO_USER cp .i3status.conf /home/$SUDO_USER/.i3status.conf
+sudo -u $SUDO_USER cp lock.png /home/$SUDO_USER/.config/i3/
 
 echo Installing darkdawn.rasi theme
 sudo -u $SUDO_USER cp rofi/darkdawn.rasi /usr/share/rofi/themes/
