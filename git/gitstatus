@@ -1,9 +1,10 @@
 #!/bin/bash
+cwd=$(pwd)
 echo "## git status"
 for repo in $@; do
 	echo "--> $repo"
 	cd $repo
        	git status
-       	cd ..
+       	cd $cwd
 	printf "\n"
 done
