@@ -47,6 +47,27 @@ or
 Copy:
 `cp \<pathToRepository\>/LinuxUtil/grub/boot-windows /usr/bin`
 
+## Git
+### gitstatus
+A simple predefined script to check the status of multiple git repositories at once.
+This script will check in every provided folder and return the status.
+
+`gitstatus <repo>`
+
+e.g. `gitstatus Git/*`
+
+#### Installation:
+
+Copy or link the script to /usr/bin/ or /usr/local/bin 
+
+Link:
+`ln -s \<pathToRepository\>/LinuxUtil/git/gitstatus /usr/bin`
+
+or
+
+Copy:
+`cp \<pathToRepository\>/LinuxUtil/git/gitstatus /usr/bin`
+
 
 ## bash
 ### .bashrc

@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "## git status"
+for repo in $@; do
+	echo "--> $repo"
+	cd $repo
+       	git status
+       	cd ..
+	printf "\n"
+done
