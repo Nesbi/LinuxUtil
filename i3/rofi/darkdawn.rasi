@@ -1,65 +1,43 @@
-/*
- * ROFI Dark Dawn
- *
- * Based on OneDarak.rasi (https://github.com/DaveDavenport/rofi-themes/blob/master/User%20Themes/onedark.rasi)
- *
- * Original-Author: Benjamin Stauss (OneDark)
- * Modifier: Nico Balbach
- * User: NesbiDevelopment
- */
-
-
+/* Rofi theme from Nico Balbach */
 * {
-  black:      #000000;
-  red:        #eb6e67;
-  green:      #95ee8f;
-  yellow:     #f8c456;
-  blue:       #6eaafb;
-  mangenta:   #d886f3;
-  cyan:       #6cdcf7;
-  orange:     #ff5757;
-  emphasis:   #fafafa44;
-  text:       #dfdfdf;
-  text-alt:   #b2b2b2;
-  fg:         #abb2bf;
-  bg:         #282c34;
+  color-text: #dfdfdf;
+  color-background: #243035dd;
 
-  spacing: 0;
   background-color: transparent;
 
-  font: "Knack Nerd Font 10";
-  text-color: @text;
+  font-size: "Hack 10";
+  text-color: @color-text;
 }
 
 window {
-  transparency: "real";
-  fullscreen: false;
-  background-color: #282c34dd;
-  border: 2px solid;
-  border-color: @orange;
+  background-color: @color-background;
 }
 
 mainbox {
-  padding: 10px 10px;
+  padding: 10px 0px 0px 0px;
 }
 
 inputbar {
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 5px 0px;
   children: [prompt, textbox-prompt-colon, entry, case-indicator];
 }
 
 prompt {
-  text-color: @orange;
+  font: "Monospace 1"; //Replace with hidden
+  text-color: @color-background;
 }
 
 textbox-prompt-colon {
   expand: false;
-  str: ":";
-  text-color: @text-alt;
+  str: "";
+  text-color: @color-text;
 }
 
 entry {
   margin: 0px 10px;
+  padding: 5px;
+  border: 0px 0px 1px 0px solid;
+  border-color: @color-text;
 }
 
 listview {
@@ -69,35 +47,12 @@ listview {
 }
 
 element {
-  padding: 5px;
-  text-color: @text-alt;
-  highlight: bold #ff5757; /* orange */
-  border-radius: 2px;
+  padding: 5px 40px;
+  text-color: @color-text;
+  highlight: bold #5294e2;
 }
 
 element selected {
-  background-color: @emphasis;
-  text-color: @text;
-}
-
-element urgent, element selected urgent {
-  text-color: @red;
-}
-
-element active, element selected active {
-  text-color: @purple;
-}
-
-message {
-  padding: 5px;
-  border-radius: 3px;
-  background-color: @emphasis;
-  border: 1px;
-  border-color: @cyan;
-}
-
-button selected {
-  padding: 5px;
-  border-radius: 3px;
-  background-color: @emphasis;
+  background-color: #fafafa22;
+  text-color: @color-text;
 }
