@@ -1,0 +1,10 @@
+#!/bin/bash
+cwd=$(pwd)
+echo "## git pull"
+for repo in $@; do
+	echo "--> $repo"
+	cd $repo
+       	git push
+       	cd $cwd
+	printf "\n"
+done
