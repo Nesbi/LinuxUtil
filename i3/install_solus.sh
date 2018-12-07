@@ -22,7 +22,7 @@ make install
 echo Installing dependencies \(rofi, compton, font-awesome-4\)
 sudo eopkg install -y rofi compton font-awesome-4
 
-if [ -f /home/$SUDO_USER/.config/i3/config]; then
+if [ -f /home/$SUDO_USER/.config/i3/config ]; then
 	echo Found existing i3 config
 	echo -\> Backup i3 config to /home/$SUDO_USER/backup/i3/config
 	sudo -u $SUDO_USER mkdir -p /home/$SUDO_USER/backup/i3
@@ -31,7 +31,7 @@ fi
 echo Installing i3 config
 sudo -u $SUDO_USER cp config /home/$SUDO_USER/.config/i3/config
 
-if [ -f /home/$SUDO_USER/.i3status.conf]; then
+if [ -f /home/$SUDO_USER/.i3status.conf ]; then
 	echo Found existing i3 status config
 	echo -\> Backup i3 config to /home/$SUDO_USER/backup/i3/i3status.conf
 	sudo -u $SUDO_USER mkdir -p /home/$SUDO_USER/backup/i3
