@@ -2,9 +2,11 @@
 cwd=$(pwd)
 echo "## git pull"
 for repo in $@; do
-	echo "--> $repo"
 	cd $repo
-       	git pull
-       	cd $cwd
-	printf "\n"
+	if [ -d .git ]
+	then	
+		echo "--> $repo"
+		git pull
+	fi
+	cd $cwd
 done

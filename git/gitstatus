@@ -3,10 +3,10 @@ cwd=$(pwd)
 echo "## git status"
 for repo in $@; do
 	cd $repo
-    if [ -d .git ]
-    then	
-        echo "-> $repo"
-        git status -s
-    fi
-    cd $cwd
+	if [ -d .git ]
+	then	
+		echo "-> $repo"
+		git status -s
+	fi
+	cd $cwd
 done
