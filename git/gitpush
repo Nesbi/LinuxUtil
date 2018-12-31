@@ -1,6 +1,5 @@
 #!/bin/bash
 cwd=$(pwd)
-echo "## git pull"
 for repo in $@; do
 	cd $repo
 	if [ -d .git ]
