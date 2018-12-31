@@ -2,9 +2,8 @@
 cwd=$(pwd)
 echo "## git status"
 for repo in $@; do
-	echo "--> $repo"
+	echo "-> $repo"
 	cd $repo
-       	git status
+	git status -s
        	cd $cwd
-	printf "\n"
 done
