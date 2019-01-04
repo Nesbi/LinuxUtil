@@ -1,11 +1,13 @@
 #!/bin/bash
 cwd=$(pwd)
 for repo in $@; do
-	cd $repo
-	if [ -d .git ]
-	then	
-		echo "-> $repo"
-		git status -s
+	if [ -d $repo ]; then
+		cd $repo
+		if [ -d .git ]
+		then	
+			echo "-> $repo"
+			git status -s
+		fi
+		cd $cwd
 	fi
-	cd $cwd
 done

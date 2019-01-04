@@ -1,11 +1,13 @@
 #!/bin/bash
 cwd=$(pwd)
 for repo in $@; do
-	cd $repo
-	if [ -d .git ]
-	then	
-		echo "--> $repo"
-		git pull
+	if [ -d $repo ]; then
+		cd $repo
+		if [ -d .git ]
+		then	
+			echo "--> $repo"
+			git pull
+		fi
+		cd $cwd
 	fi
-	cd $cwd
 done
