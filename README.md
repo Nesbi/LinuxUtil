@@ -134,7 +134,9 @@ Append to existing file:
 
 ## apt
 ### search
-A simple predefined script to format the apt-cache search to be more usable.
+A simple predefined script to format the apt-cache search for better readability and highlighted search term.
+(Inspired by eopkg search from Solos)
+
 ```
 <package name>       - <description>
 <package name>       - <description>
