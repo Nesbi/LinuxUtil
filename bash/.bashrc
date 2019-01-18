@@ -6,3 +6,4 @@ alias ls='ls -a --color=auto'
 alias gitstatus="~/Git/LinuxUtil/git/gitstatus"
 alias gitpull="~/Git/LinuxUtil/git/gitpull"
 alias gitpush="~/Git/LinuxUtil/git/gitpush"
+alias apts="~/Git/LinuxUtil/apt/search.sh"

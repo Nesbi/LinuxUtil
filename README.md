@@ -48,7 +48,7 @@ Copy:
 `cp \<pathToRepository\>/LinuxUtil/grub/boot-windows /usr/bin`
 
 ## Git
-### gitstatus
+### gitstatus / gitpull / gitpush
 A simple predefined script to check the status of multiple git repositories at once.
 This script will check in every provided folder and return the status.
 
@@ -131,3 +131,33 @@ or
 
 Append to existing file:
 `cat \<pathToRepository\>/LinuxUtil/vim/.vimrc >> ~/.vimrc`
+
+## apt
+### search
+A simple predefined script to format the apt-cache search to be more usable.
+```
+<package name>       - <description>
+<package name>       - <description>
+<package name>       - <description>
+```
+
+`search <params>`
+
+e.g. `search nodejs
+`
+
+#### Installation:
+
+Copy or link the script to /usr/bin/ or /usr/local/bin
+
+or
+
+Add alias to .bashrc (see [bashrc](bash/.bashrc)
+
+Link:
+`ln -s \<pathToRepository\>/LinuxUtil/apt/search /usr/bin/apts`
+
+or
+
+Copy:
+`cp \<pathToRepository\>/LinuxUtil/apt/search /usr/bin/apts`
