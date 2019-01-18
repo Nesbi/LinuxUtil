@@ -152,7 +152,7 @@ Copy or link the script to /usr/bin/ or /usr/local/bin
 
 or
 
-Add alias to .bashrc (see [bashrc](bash/.bashrc)
+Add alias to .bashrc (see [bashrc](bash/.bashrc) )
 
 Link:
 `ln -s \<pathToRepository\>/LinuxUtil/apt/search /usr/bin/apts`
