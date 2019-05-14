@@ -8,6 +8,7 @@ alias ls='ls -a --color=auto'
 alias gitstatus="sh ~/Git/LinuxUtil/git/gitstatus"
 alias gitpull="sh ~/Git/LinuxUtil/git/gitpull"
 alias gitpush="sh ~/Git/LinuxUtil/git/gitpush"
+alias gitgraph="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)'"
 
 
 # Vim
